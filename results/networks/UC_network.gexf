@@ -1,0 +1,1904 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-05-02">
+    <creator>NetworkX 3.4.2</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="0" title="correlation" type="double" />
+      <attribute id="1" title="interaction" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Alistipes_finegoldii" label="Alistipes_finegoldii" />
+      <node id="Alistipes_onderdonkii" label="Alistipes_onderdonkii" />
+      <node id="Alistipes_putredinis" label="Alistipes_putredinis" />
+      <node id="Alistipes_shahii" label="Alistipes_shahii" />
+      <node id="Anaerostipes_hadrus" label="Anaerostipes_hadrus" />
+      <node id="Anaerotruncus_unclassified" label="Anaerotruncus_unclassified" />
+      <node id="Bacteroides_caccae" label="Bacteroides_caccae" />
+      <node id="Bacteroides_cellulosilyticus" label="Bacteroides_cellulosilyticus" />
+      <node id="Bacteroides_dorei" label="Bacteroides_dorei" />
+      <node id="Bacteroides_eggerthii" label="Bacteroides_eggerthii" />
+      <node id="Bacteroides_faecis" label="Bacteroides_faecis" />
+      <node id="Bacteroides_finegoldii" label="Bacteroides_finegoldii" />
+      <node id="Bacteroides_fragilis" label="Bacteroides_fragilis" />
+      <node id="Bacteroides_massiliensis" label="Bacteroides_massiliensis" />
+      <node id="Bacteroides_ovatus" label="Bacteroides_ovatus" />
+      <node id="Bacteroides_stercoris" label="Bacteroides_stercoris" />
+      <node id="Bacteroides_thetaiotaomicron" label="Bacteroides_thetaiotaomicron" />
+      <node id="Bacteroides_uniformis" label="Bacteroides_uniformis" />
+      <node id="Bacteroides_vulgatus" label="Bacteroides_vulgatus" />
+      <node id="Bacteroides_xylanisolvens" label="Bacteroides_xylanisolvens" />
+      <node id="Barnesiella_intestinihominis" label="Barnesiella_intestinihominis" />
+      <node id="Bifidobacterium_adolescentis" label="Bifidobacterium_adolescentis" />
+      <node id="Bifidobacterium_bifidum" label="Bifidobacterium_bifidum" />
+      <node id="Bifidobacterium_longum" label="Bifidobacterium_longum" />
+      <node id="Bilophila_unclassified" label="Bilophila_unclassified" />
+      <node id="Bilophila_wadsworthia" label="Bilophila_wadsworthia" />
+      <node id="Burkholderiales_bacterium_1_1_47" label="Burkholderiales_bacterium_1_1_47" />
+      <node id="Clostridiaceae_bacterium_JC118" label="Clostridiaceae_bacterium_JC118" />
+      <node id="Clostridiales_bacterium_1_7_47FAA" label="Clostridiales_bacterium_1_7_47FAA" />
+      <node id="Clostridium_asparagiforme" label="Clostridium_asparagiforme" />
+      <node id="Clostridium_bartlettii" label="Clostridium_bartlettii" />
+      <node id="Clostridium_bolteae" label="Clostridium_bolteae" />
+      <node id="Clostridium_citroniae" label="Clostridium_citroniae" />
+      <node id="Clostridium_clostridioforme" label="Clostridium_clostridioforme" />
+      <node id="Clostridium_hathewayi" label="Clostridium_hathewayi" />
+      <node id="Clostridium_leptum" label="Clostridium_leptum" />
+      <node id="Clostridium_symbiosum" label="Clostridium_symbiosum" />
+      <node id="Collinsella_aerofaciens" label="Collinsella_aerofaciens" />
+      <node id="Coprobacillus_unclassified" label="Coprobacillus_unclassified" />
+      <node id="Coprococcus_catus" label="Coprococcus_catus" />
+      <node id="Coprococcus_comes" label="Coprococcus_comes" />
+      <node id="Dialister_invisus" label="Dialister_invisus" />
+      <node id="Dorea_formicigenerans" label="Dorea_formicigenerans" />
+      <node id="Dorea_longicatena" label="Dorea_longicatena" />
+      <node id="Dorea_unclassified" label="Dorea_unclassified" />
+      <node id="Eggerthella_unclassified" label="Eggerthella_unclassified" />
+      <node id="Escherichia_coli" label="Escherichia_coli" />
+      <node id="Escherichia_unclassified" label="Escherichia_unclassified" />
+      <node id="Eubacterium_eligens" label="Eubacterium_eligens" />
+      <node id="Eubacterium_hallii" label="Eubacterium_hallii" />
+      <node id="Eubacterium_ramulus" label="Eubacterium_ramulus" />
+      <node id="Eubacterium_rectale" label="Eubacterium_rectale" />
+      <node id="Eubacterium_siraeum" label="Eubacterium_siraeum" />
+      <node id="Eubacterium_ventriosum" label="Eubacterium_ventriosum" />
+      <node id="Faecalibacterium_prausnitzii" label="Faecalibacterium_prausnitzii" />
+      <node id="Flavonifractor_plautii" label="Flavonifractor_plautii" />
+      <node id="Haemophilus_parainfluenzae" label="Haemophilus_parainfluenzae" />
+      <node id="Holdemania_filiformis" label="Holdemania_filiformis" />
+      <node id="Holdemania_unclassified" label="Holdemania_unclassified" />
+      <node id="Lachnospiraceae_bacterium_1_1_57FAA" label="Lachnospiraceae_bacterium_1_1_57FAA" />
+      <node id="Lachnospiraceae_bacterium_2_1_58FAA" label="Lachnospiraceae_bacterium_2_1_58FAA" />
+      <node id="Lachnospiraceae_bacterium_3_1_46FAA" label="Lachnospiraceae_bacterium_3_1_46FAA" />
+      <node id="Lachnospiraceae_bacterium_5_1_63FAA" label="Lachnospiraceae_bacterium_5_1_63FAA" />
+      <node id="Lachnospiraceae_bacterium_7_1_58FAA" label="Lachnospiraceae_bacterium_7_1_58FAA" />
+      <node id="Lachnospiraceae_bacterium_8_1_57FAA" label="Lachnospiraceae_bacterium_8_1_57FAA" />
+      <node id="Odoribacter_splanchnicus" label="Odoribacter_splanchnicus" />
+      <node id="Oscillibacter_unclassified" label="Oscillibacter_unclassified" />
+      <node id="Parabacteroides_distasonis" label="Parabacteroides_distasonis" />
+      <node id="Parabacteroides_merdae" label="Parabacteroides_merdae" />
+      <node id="Parabacteroides_unclassified" label="Parabacteroides_unclassified" />
+      <node id="Parasutterella_excrementihominis" label="Parasutterella_excrementihominis" />
+      <node id="Peptostreptococcaceae_noname_unclassified" label="Peptostreptococcaceae_noname_unclassified" />
+      <node id="Roseburia_hominis" label="Roseburia_hominis" />
+      <node id="Roseburia_intestinalis" label="Roseburia_intestinalis" />
+      <node id="Roseburia_inulinivorans" label="Roseburia_inulinivorans" />
+      <node id="Roseburia_unclassified" label="Roseburia_unclassified" />
+      <node id="Ruminococcus_bromii" label="Ruminococcus_bromii" />
+      <node id="Ruminococcus_gnavus" label="Ruminococcus_gnavus" />
+      <node id="Ruminococcus_lactaris" label="Ruminococcus_lactaris" />
+      <node id="Ruminococcus_obeum" label="Ruminococcus_obeum" />
+      <node id="Ruminococcus_torques" label="Ruminococcus_torques" />
+      <node id="Streptococcus_parasanguinis" label="Streptococcus_parasanguinis" />
+      <node id="Streptococcus_salivarius" label="Streptococcus_salivarius" />
+      <node id="Subdoligranulum_unclassified" label="Subdoligranulum_unclassified" />
+      <node id="Veillonella_atypica" label="Veillonella_atypica" />
+      <node id="Veillonella_dispar" label="Veillonella_dispar" />
+      <node id="Veillonella_parvula" label="Veillonella_parvula" />
+      <node id="Veillonella_unclassified" label="Veillonella_unclassified" />
+    </nodes>
+    <edges>
+      <edge source="Alistipes_finegoldii" target="Bifidobacterium_longum" id="0" weight="0.1519">
+        <attvalues>
+          <attvalue for="0" value="-0.1519" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_finegoldii" target="Bilophila_wadsworthia" id="1" weight="0.1794">
+        <attvalues>
+          <attvalue for="0" value="0.1794" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_finegoldii" target="Haemophilus_parainfluenzae" id="2" weight="0.1673">
+        <attvalues>
+          <attvalue for="0" value="-0.1673" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_finegoldii" target="Veillonella_unclassified" id="3" weight="0.1566">
+        <attvalues>
+          <attvalue for="0" value="-0.1566" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Alistipes_shahii" id="4" weight="0.3329999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.3329999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Bacteroides_ovatus" id="5" weight="0.1683">
+        <attvalues>
+          <attvalue for="0" value="0.1683" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Bacteroides_uniformis" id="6" weight="0.1502">
+        <attvalues>
+          <attvalue for="0" value="0.1502" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Bacteroides_vulgatus" id="7" weight="0.1619">
+        <attvalues>
+          <attvalue for="0" value="0.1619" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Bilophila_wadsworthia" id="8" weight="0.17495">
+        <attvalues>
+          <attvalue for="0" value="0.17495" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Clostridiaceae_bacterium_JC118" id="9" weight="0.1585">
+        <attvalues>
+          <attvalue for="0" value="-0.1585" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Clostridium_citroniae" id="10" weight="0.15175">
+        <attvalues>
+          <attvalue for="0" value="-0.15175" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Dorea_formicigenerans" id="11" weight="0.19035">
+        <attvalues>
+          <attvalue for="0" value="-0.19035" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Haemophilus_parainfluenzae" id="12" weight="0.1938">
+        <attvalues>
+          <attvalue for="0" value="-0.1938" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Lachnospiraceae_bacterium_2_1_58FAA" id="13" weight="0.1619">
+        <attvalues>
+          <attvalue for="0" value="-0.1619" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Veillonella_parvula" id="14" weight="0.18075">
+        <attvalues>
+          <attvalue for="0" value="-0.18075" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_onderdonkii" target="Veillonella_unclassified" id="15" weight="0.1566">
+        <attvalues>
+          <attvalue for="0" value="-0.1566" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_putredinis" target="Clostridium_bolteae" id="16" weight="0.1744">
+        <attvalues>
+          <attvalue for="0" value="-0.1744" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_putredinis" target="Clostridium_citroniae" id="17" weight="0.17635">
+        <attvalues>
+          <attvalue for="0" value="-0.17635" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_putredinis" target="Coprococcus_comes" id="18" weight="0.17325">
+        <attvalues>
+          <attvalue for="0" value="0.17325" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_putredinis" target="Eubacterium_siraeum" id="19" weight="0.1674">
+        <attvalues>
+          <attvalue for="0" value="0.1674" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_putredinis" target="Veillonella_dispar" id="20" weight="0.1692">
+        <attvalues>
+          <attvalue for="0" value="-0.1692" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_putredinis" target="Veillonella_parvula" id="21" weight="0.18505">
+        <attvalues>
+          <attvalue for="0" value="-0.18505" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_putredinis" target="Veillonella_unclassified" id="22" weight="0.1885">
+        <attvalues>
+          <attvalue for="0" value="-0.1885" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Bacteroides_fragilis" id="23" weight="0.1916">
+        <attvalues>
+          <attvalue for="0" value="-0.1916" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Bacteroides_ovatus" id="24" weight="0.1712">
+        <attvalues>
+          <attvalue for="0" value="0.1712" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Bacteroides_thetaiotaomicron" id="25" weight="0.1654999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1654999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Bifidobacterium_adolescentis" id="26" weight="0.1827">
+        <attvalues>
+          <attvalue for="0" value="0.1827" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Bifidobacterium_bifidum" id="27" weight="0.1826999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1826999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Clostridium_asparagiforme" id="28" weight="0.1704999999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1704999999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Clostridium_bartlettii" id="29" weight="0.19205">
+        <attvalues>
+          <attvalue for="0" value="-0.19205" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Clostridium_bolteae" id="30" weight="0.16305">
+        <attvalues>
+          <attvalue for="0" value="-0.16305" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Clostridium_citroniae" id="31" weight="0.2115">
+        <attvalues>
+          <attvalue for="0" value="-0.2115" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Clostridium_hathewayi" id="32" weight="0.2351">
+        <attvalues>
+          <attvalue for="0" value="-0.2351" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Coprococcus_comes" id="33" weight="0.1765499999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1765499999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Eggerthella_unclassified" id="34" weight="0.1623">
+        <attvalues>
+          <attvalue for="0" value="-0.1623" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Haemophilus_parainfluenzae" id="35" weight="0.2343">
+        <attvalues>
+          <attvalue for="0" value="-0.2343" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Lachnospiraceae_bacterium_1_1_57FAA" id="36" weight="0.1688">
+        <attvalues>
+          <attvalue for="0" value="-0.1688" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Oscillibacter_unclassified" id="37" weight="0.19225">
+        <attvalues>
+          <attvalue for="0" value="0.19225" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Alistipes_shahii" target="Ruminococcus_lactaris" id="38" weight="0.23615">
+        <attvalues>
+          <attvalue for="0" value="-0.23615" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Bacteroides_massiliensis" id="39" weight="0.18775">
+        <attvalues>
+          <attvalue for="0" value="0.18775" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Bilophila_wadsworthia" id="40" weight="0.1743">
+        <attvalues>
+          <attvalue for="0" value="-0.1743" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Clostridium_asparagiforme" id="41" weight="0.16835">
+        <attvalues>
+          <attvalue for="0" value="-0.16835" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Clostridium_clostridioforme" id="42" weight="0.17195">
+        <attvalues>
+          <attvalue for="0" value="-0.17195" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Clostridium_symbiosum" id="43" weight="0.1914">
+        <attvalues>
+          <attvalue for="0" value="-0.1914" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Dorea_longicatena" id="44" weight="0.1975">
+        <attvalues>
+          <attvalue for="0" value="0.1975" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Lachnospiraceae_bacterium_7_1_58FAA" id="45" weight="0.1628">
+        <attvalues>
+          <attvalue for="0" value="0.1628" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Ruminococcus_gnavus" id="46" weight="0.18255">
+        <attvalues>
+          <attvalue for="0" value="-0.18255" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerostipes_hadrus" target="Ruminococcus_obeum" id="47" weight="0.1875">
+        <attvalues>
+          <attvalue for="0" value="0.1875" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerotruncus_unclassified" target="Bilophila_unclassified" id="48" weight="0.174">
+        <attvalues>
+          <attvalue for="0" value="-0.174" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerotruncus_unclassified" target="Lachnospiraceae_bacterium_5_1_63FAA" id="49" weight="0.28975">
+        <attvalues>
+          <attvalue for="0" value="0.28975" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Anaerotruncus_unclassified" target="Ruminococcus_gnavus" id="50" weight="0.15975">
+        <attvalues>
+          <attvalue for="0" value="0.15975" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_caccae" target="Bacteroides_eggerthii" id="51" weight="0.2933">
+        <attvalues>
+          <attvalue for="0" value="0.2933" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_caccae" target="Bacteroides_stercoris" id="52" weight="0.18175">
+        <attvalues>
+          <attvalue for="0" value="0.18175" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_caccae" target="Eubacterium_siraeum" id="53" weight="0.17425">
+        <attvalues>
+          <attvalue for="0" value="0.17425" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_caccae" target="Parabacteroides_merdae" id="54" weight="0.1894">
+        <attvalues>
+          <attvalue for="0" value="0.1894" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Bacteroides_eggerthii" id="55" weight="0.2551">
+        <attvalues>
+          <attvalue for="0" value="0.2551" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Bacteroides_finegoldii" id="56" weight="0.2864">
+        <attvalues>
+          <attvalue for="0" value="0.2864" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Dialister_invisus" id="57" weight="0.1654499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1654499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Eubacterium_ramulus" id="58" weight="0.1776">
+        <attvalues>
+          <attvalue for="0" value="-0.1776" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Faecalibacterium_prausnitzii" id="59" weight="0.2075">
+        <attvalues>
+          <attvalue for="0" value="-0.2075" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Parabacteroides_distasonis" id="60" weight="0.25925">
+        <attvalues>
+          <attvalue for="0" value="0.25925" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Parabacteroides_merdae" id="61" weight="0.1993">
+        <attvalues>
+          <attvalue for="0" value="0.1993" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Parabacteroides_unclassified" id="62" weight="0.1730499999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1730499999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Roseburia_intestinalis" id="63" weight="0.16135">
+        <attvalues>
+          <attvalue for="0" value="-0.16135" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Streptococcus_salivarius" id="64" weight="0.19765">
+        <attvalues>
+          <attvalue for="0" value="-0.19765" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Veillonella_dispar" id="65" weight="0.16255">
+        <attvalues>
+          <attvalue for="0" value="-0.16255" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_cellulosilyticus" target="Veillonella_unclassified" id="66" weight="0.1825">
+        <attvalues>
+          <attvalue for="0" value="-0.1825" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Bifidobacterium_bifidum" id="67" weight="0.19295">
+        <attvalues>
+          <attvalue for="0" value="-0.19295" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Clostridium_leptum" id="68" weight="0.16335">
+        <attvalues>
+          <attvalue for="0" value="0.16335" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Dorea_formicigenerans" id="69" weight="0.16615">
+        <attvalues>
+          <attvalue for="0" value="-0.16615" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Eubacterium_hallii" id="70" weight="0.18985">
+        <attvalues>
+          <attvalue for="0" value="-0.18985" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Parabacteroides_distasonis" id="71" weight="0.1805">
+        <attvalues>
+          <attvalue for="0" value="0.1805" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Parabacteroides_merdae" id="72" weight="0.26065">
+        <attvalues>
+          <attvalue for="0" value="0.26065" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Streptococcus_salivarius" id="73" weight="0.17535">
+        <attvalues>
+          <attvalue for="0" value="-0.17535" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Veillonella_dispar" id="74" weight="0.156">
+        <attvalues>
+          <attvalue for="0" value="-0.156" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Veillonella_parvula" id="75" weight="0.1750499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1750499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_dorei" target="Veillonella_unclassified" id="76" weight="0.2081">
+        <attvalues>
+          <attvalue for="0" value="-0.2081" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_eggerthii" target="Bacteroides_ovatus" id="77" weight="0.2253">
+        <attvalues>
+          <attvalue for="0" value="0.2253" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_eggerthii" target="Eubacterium_siraeum" id="78" weight="0.20315">
+        <attvalues>
+          <attvalue for="0" value="0.20315" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_eggerthii" target="Haemophilus_parainfluenzae" id="79" weight="0.2183999999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.2183999999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_faecis" target="Bacteroides_stercoris" id="80" weight="0.1793499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1793499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_faecis" target="Flavonifractor_plautii" id="81" weight="0.16605">
+        <attvalues>
+          <attvalue for="0" value="-0.16605" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_faecis" target="Parabacteroides_unclassified" id="82" weight="0.15675">
+        <attvalues>
+          <attvalue for="0" value="0.15675" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_finegoldii" target="Bacteroides_massiliensis" id="83" weight="0.238">
+        <attvalues>
+          <attvalue for="0" value="-0.238" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_finegoldii" target="Bifidobacterium_longum" id="84" weight="0.18535">
+        <attvalues>
+          <attvalue for="0" value="-0.18535" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_finegoldii" target="Burkholderiales_bacterium_1_1_47" id="85" weight="0.1623">
+        <attvalues>
+          <attvalue for="0" value="0.1623" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_finegoldii" target="Parabacteroides_merdae" id="86" weight="0.2136">
+        <attvalues>
+          <attvalue for="0" value="0.2136" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_fragilis" target="Bacteroides_ovatus" id="87" weight="0.15695">
+        <attvalues>
+          <attvalue for="0" value="-0.15695" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_fragilis" target="Dialister_invisus" id="88" weight="0.20035">
+        <attvalues>
+          <attvalue for="0" value="-0.20035" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_fragilis" target="Flavonifractor_plautii" id="89" weight="0.1689">
+        <attvalues>
+          <attvalue for="0" value="0.1689" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_fragilis" target="Lachnospiraceae_bacterium_7_1_58FAA" id="90" weight="0.15225">
+        <attvalues>
+          <attvalue for="0" value="0.15225" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_fragilis" target="Roseburia_inulinivorans" id="91" weight="0.2370499999999999">
+        <attvalues>
+          <attvalue for="0" value="0.2370499999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_fragilis" target="Ruminococcus_lactaris" id="92" weight="0.246">
+        <attvalues>
+          <attvalue for="0" value="0.246" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_massiliensis" target="Collinsella_aerofaciens" id="93" weight="0.1944">
+        <attvalues>
+          <attvalue for="0" value="-0.1944" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_massiliensis" target="Coprobacillus_unclassified" id="94" weight="0.2622">
+        <attvalues>
+          <attvalue for="0" value="0.2622" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_massiliensis" target="Dialister_invisus" id="95" weight="0.3065">
+        <attvalues>
+          <attvalue for="0" value="0.3065" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_massiliensis" target="Parabacteroides_distasonis" id="96" weight="0.1562">
+        <attvalues>
+          <attvalue for="0" value="-0.1562" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_massiliensis" target="Parabacteroides_merdae" id="97" weight="0.209">
+        <attvalues>
+          <attvalue for="0" value="-0.209" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_massiliensis" target="Parasutterella_excrementihominis" id="98" weight="0.15375">
+        <attvalues>
+          <attvalue for="0" value="0.15375" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_massiliensis" target="Ruminococcus_gnavus" id="99" weight="0.22375">
+        <attvalues>
+          <attvalue for="0" value="0.22375" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Bacteroides_uniformis" id="100" weight="0.17525">
+        <attvalues>
+          <attvalue for="0" value="0.17525" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Bacteroides_vulgatus" id="101" weight="0.2048">
+        <attvalues>
+          <attvalue for="0" value="0.2048" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Clostridium_asparagiforme" id="102" weight="0.19865">
+        <attvalues>
+          <attvalue for="0" value="-0.19865" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Clostridium_bolteae" id="103" weight="0.21995">
+        <attvalues>
+          <attvalue for="0" value="-0.21995" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Clostridium_hathewayi" id="104" weight="0.1644">
+        <attvalues>
+          <attvalue for="0" value="-0.1644" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Escherichia_unclassified" id="105" weight="0.19535">
+        <attvalues>
+          <attvalue for="0" value="-0.19535" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Eubacterium_siraeum" id="106" weight="0.20145">
+        <attvalues>
+          <attvalue for="0" value="0.20145" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Flavonifractor_plautii" id="107" weight="0.17165">
+        <attvalues>
+          <attvalue for="0" value="-0.17165" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Parabacteroides_merdae" id="108" weight="0.35265">
+        <attvalues>
+          <attvalue for="0" value="0.35265" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Parabacteroides_unclassified" id="109" weight="0.1523999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1523999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Ruminococcus_lactaris" id="110" weight="0.2228">
+        <attvalues>
+          <attvalue for="0" value="-0.2228" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_ovatus" target="Veillonella_parvula" id="111" weight="0.1505">
+        <attvalues>
+          <attvalue for="0" value="-0.1505" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Bacteroides_xylanisolvens" id="112" weight="0.1898">
+        <attvalues>
+          <attvalue for="0" value="0.1898" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Clostridiales_bacterium_1_7_47FAA" id="113" weight="0.16505">
+        <attvalues>
+          <attvalue for="0" value="-0.16505" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Clostridium_asparagiforme" id="114" weight="0.20295">
+        <attvalues>
+          <attvalue for="0" value="-0.20295" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Clostridium_bartlettii" id="115" weight="0.19645">
+        <attvalues>
+          <attvalue for="0" value="-0.19645" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Clostridium_bolteae" id="116" weight="0.15975">
+        <attvalues>
+          <attvalue for="0" value="-0.15975" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Coprococcus_catus" id="117" weight="0.1595">
+        <attvalues>
+          <attvalue for="0" value="-0.1595" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Dorea_formicigenerans" id="118" weight="0.1958">
+        <attvalues>
+          <attvalue for="0" value="-0.1958" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Escherichia_coli" id="119" weight="0.2388">
+        <attvalues>
+          <attvalue for="0" value="-0.2388" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Faecalibacterium_prausnitzii" id="120" weight="0.19095">
+        <attvalues>
+          <attvalue for="0" value="-0.19095" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Parabacteroides_distasonis" id="121" weight="0.2373">
+        <attvalues>
+          <attvalue for="0" value="0.2373" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Parabacteroides_unclassified" id="122" weight="0.2827">
+        <attvalues>
+          <attvalue for="0" value="0.2827" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_stercoris" target="Roseburia_intestinalis" id="123" weight="0.19065">
+        <attvalues>
+          <attvalue for="0" value="-0.19065" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_thetaiotaomicron" target="Clostridium_hathewayi" id="124" weight="0.15365">
+        <attvalues>
+          <attvalue for="0" value="-0.15365" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_thetaiotaomicron" target="Coprobacillus_unclassified" id="125" weight="0.26315">
+        <attvalues>
+          <attvalue for="0" value="-0.26315" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_thetaiotaomicron" target="Dorea_longicatena" id="126" weight="0.19815">
+        <attvalues>
+          <attvalue for="0" value="0.19815" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_thetaiotaomicron" target="Flavonifractor_plautii" id="127" weight="0.1694">
+        <attvalues>
+          <attvalue for="0" value="-0.1694" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_thetaiotaomicron" target="Parabacteroides_merdae" id="128" weight="0.2182">
+        <attvalues>
+          <attvalue for="0" value="0.2182" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Collinsella_aerofaciens" id="129" weight="0.2292">
+        <attvalues>
+          <attvalue for="0" value="-0.2292" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Coprococcus_catus" id="130" weight="0.2491">
+        <attvalues>
+          <attvalue for="0" value="-0.2491" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Flavonifractor_plautii" id="131" weight="0.1835">
+        <attvalues>
+          <attvalue for="0" value="-0.1835" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Haemophilus_parainfluenzae" id="132" weight="0.18905">
+        <attvalues>
+          <attvalue for="0" value="-0.18905" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Parabacteroides_unclassified" id="133" weight="0.29195">
+        <attvalues>
+          <attvalue for="0" value="0.29195" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Peptostreptococcaceae_noname_unclassified" id="134" weight="0.1523">
+        <attvalues>
+          <attvalue for="0" value="-0.1523" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Veillonella_dispar" id="135" weight="0.1591">
+        <attvalues>
+          <attvalue for="0" value="-0.1591" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_uniformis" target="Veillonella_parvula" id="136" weight="0.1563">
+        <attvalues>
+          <attvalue for="0" value="-0.1563" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Clostridium_bartlettii" id="137" weight="0.2252">
+        <attvalues>
+          <attvalue for="0" value="-0.2252" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Clostridium_hathewayi" id="138" weight="0.15935">
+        <attvalues>
+          <attvalue for="0" value="-0.15935" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Clostridium_symbiosum" id="139" weight="0.1709">
+        <attvalues>
+          <attvalue for="0" value="-0.1709" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Dorea_longicatena" id="140" weight="0.2319999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.2319999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Holdemania_unclassified" id="141" weight="0.16485">
+        <attvalues>
+          <attvalue for="0" value="-0.16485" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Lachnospiraceae_bacterium_5_1_63FAA" id="142" weight="0.1687">
+        <attvalues>
+          <attvalue for="0" value="-0.1687" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Lachnospiraceae_bacterium_7_1_58FAA" id="143" weight="0.2299999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.2299999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Parabacteroides_distasonis" id="144" weight="0.2116">
+        <attvalues>
+          <attvalue for="0" value="0.2116" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Ruminococcus_gnavus" id="145" weight="0.22905">
+        <attvalues>
+          <attvalue for="0" value="-0.22905" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_vulgatus" target="Veillonella_atypica" id="146" weight="0.19355">
+        <attvalues>
+          <attvalue for="0" value="-0.19355" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_xylanisolvens" target="Dorea_formicigenerans" id="147" weight="0.16925">
+        <attvalues>
+          <attvalue for="0" value="0.16925" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_xylanisolvens" target="Parasutterella_excrementihominis" id="148" weight="0.25485">
+        <attvalues>
+          <attvalue for="0" value="0.25485" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bacteroides_xylanisolvens" target="Ruminococcus_bromii" id="149" weight="0.15735">
+        <attvalues>
+          <attvalue for="0" value="-0.15735" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Barnesiella_intestinihominis" target="Clostridium_bartlettii" id="150" weight="0.1533">
+        <attvalues>
+          <attvalue for="0" value="-0.1533" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Barnesiella_intestinihominis" target="Dialister_invisus" id="151" weight="0.1589499999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1589499999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Barnesiella_intestinihominis" target="Dorea_longicatena" id="152" weight="0.1984">
+        <attvalues>
+          <attvalue for="0" value="0.1984" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Barnesiella_intestinihominis" target="Parabacteroides_merdae" id="153" weight="0.17165">
+        <attvalues>
+          <attvalue for="0" value="-0.17165" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Barnesiella_intestinihominis" target="Parabacteroides_unclassified" id="154" weight="0.27155">
+        <attvalues>
+          <attvalue for="0" value="0.27155" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Barnesiella_intestinihominis" target="Roseburia_unclassified" id="155" weight="0.15825">
+        <attvalues>
+          <attvalue for="0" value="0.15825" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_adolescentis" target="Burkholderiales_bacterium_1_1_47" id="156" weight="0.1763">
+        <attvalues>
+          <attvalue for="0" value="-0.1763" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_adolescentis" target="Clostridium_asparagiforme" id="157" weight="0.19645">
+        <attvalues>
+          <attvalue for="0" value="-0.19645" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_adolescentis" target="Dorea_formicigenerans" id="158" weight="0.1582">
+        <attvalues>
+          <attvalue for="0" value="0.1582" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_adolescentis" target="Holdemania_filiformis" id="159" weight="0.1648">
+        <attvalues>
+          <attvalue for="0" value="0.1648" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_adolescentis" target="Odoribacter_splanchnicus" id="160" weight="0.16215">
+        <attvalues>
+          <attvalue for="0" value="0.16215" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_adolescentis" target="Ruminococcus_gnavus" id="161" weight="0.1566499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1566499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_adolescentis" target="Streptococcus_salivarius" id="162" weight="0.1976">
+        <attvalues>
+          <attvalue for="0" value="0.1976" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Clostridiales_bacterium_1_7_47FAA" id="163" weight="0.1563">
+        <attvalues>
+          <attvalue for="0" value="-0.1563" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Clostridium_asparagiforme" id="164" weight="0.16845">
+        <attvalues>
+          <attvalue for="0" value="-0.16845" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Clostridium_hathewayi" id="165" weight="0.1510999999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1510999999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Coprococcus_comes" id="166" weight="0.20415">
+        <attvalues>
+          <attvalue for="0" value="0.20415" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Dialister_invisus" id="167" weight="0.16725">
+        <attvalues>
+          <attvalue for="0" value="0.16725" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Parabacteroides_distasonis" id="168" weight="0.26155">
+        <attvalues>
+          <attvalue for="0" value="-0.26155" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Streptococcus_salivarius" id="169" weight="0.21545">
+        <attvalues>
+          <attvalue for="0" value="0.21545" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_bifidum" target="Subdoligranulum_unclassified" id="170" weight="0.1803">
+        <attvalues>
+          <attvalue for="0" value="0.1803" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_longum" target="Roseburia_intestinalis" id="171" weight="0.1575">
+        <attvalues>
+          <attvalue for="0" value="-0.1575" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_longum" target="Ruminococcus_gnavus" id="172" weight="0.19555">
+        <attvalues>
+          <attvalue for="0" value="-0.19555" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bifidobacterium_longum" target="Ruminococcus_lactaris" id="173" weight="0.1718">
+        <attvalues>
+          <attvalue for="0" value="-0.1718" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_unclassified" target="Burkholderiales_bacterium_1_1_47" id="174" weight="0.23965">
+        <attvalues>
+          <attvalue for="0" value="0.23965" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_unclassified" target="Oscillibacter_unclassified" id="175" weight="0.17115">
+        <attvalues>
+          <attvalue for="0" value="0.17115" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_unclassified" target="Parabacteroides_merdae" id="176" weight="0.1547">
+        <attvalues>
+          <attvalue for="0" value="0.1547" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_unclassified" target="Parabacteroides_unclassified" id="177" weight="0.23735">
+        <attvalues>
+          <attvalue for="0" value="0.23735" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_unclassified" target="Roseburia_intestinalis" id="178" weight="0.2063499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.2063499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_wadsworthia" target="Dialister_invisus" id="179" weight="0.1921999999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1921999999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_wadsworthia" target="Parabacteroides_merdae" id="180" weight="0.22525">
+        <attvalues>
+          <attvalue for="0" value="0.22525" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Bilophila_wadsworthia" target="Roseburia_intestinalis" id="181" weight="0.19955">
+        <attvalues>
+          <attvalue for="0" value="-0.19955" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Burkholderiales_bacterium_1_1_47" target="Parabacteroides_distasonis" id="182" weight="0.15925">
+        <attvalues>
+          <attvalue for="0" value="0.15925" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridiales_bacterium_1_7_47FAA" target="Clostridium_bartlettii" id="183" weight="0.2289">
+        <attvalues>
+          <attvalue for="0" value="0.2289" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridiales_bacterium_1_7_47FAA" target="Clostridium_bolteae" id="184" weight="0.1599">
+        <attvalues>
+          <attvalue for="0" value="0.1599" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridiales_bacterium_1_7_47FAA" target="Clostridium_citroniae" id="185" weight="0.21955">
+        <attvalues>
+          <attvalue for="0" value="0.21955" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridiales_bacterium_1_7_47FAA" target="Clostridium_hathewayi" id="186" weight="0.1896499999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1896499999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridiales_bacterium_1_7_47FAA" target="Eubacterium_siraeum" id="187" weight="0.1896499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1896499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Clostridium_bolteae" id="188" weight="0.27275">
+        <attvalues>
+          <attvalue for="0" value="0.27275" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Clostridium_citroniae" id="189" weight="0.29625">
+        <attvalues>
+          <attvalue for="0" value="0.29625" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Clostridium_clostridioforme" id="190" weight="0.24795">
+        <attvalues>
+          <attvalue for="0" value="0.24795" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Clostridium_hathewayi" id="191" weight="0.30275">
+        <attvalues>
+          <attvalue for="0" value="0.30275" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Clostridium_leptum" id="192" weight="0.15245">
+        <attvalues>
+          <attvalue for="0" value="0.15245" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Clostridium_symbiosum" id="193" weight="0.2319999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.2319999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Dorea_longicatena" id="194" weight="0.1588">
+        <attvalues>
+          <attvalue for="0" value="-0.1588" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Eggerthella_unclassified" id="195" weight="0.1525999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1525999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_asparagiforme" target="Eubacterium_siraeum" id="196" weight="0.1621">
+        <attvalues>
+          <attvalue for="0" value="-0.1621" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bartlettii" target="Clostridium_citroniae" id="197" weight="0.1719">
+        <attvalues>
+          <attvalue for="0" value="0.1719" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bartlettii" target="Clostridium_clostridioforme" id="198" weight="0.2124">
+        <attvalues>
+          <attvalue for="0" value="0.2124" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bartlettii" target="Clostridium_hathewayi" id="199" weight="0.19025">
+        <attvalues>
+          <attvalue for="0" value="0.19025" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bartlettii" target="Flavonifractor_plautii" id="200" weight="0.2254">
+        <attvalues>
+          <attvalue for="0" value="0.2254" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bartlettii" target="Parabacteroides_merdae" id="201" weight="0.1558999999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1558999999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bolteae" target="Clostridium_clostridioforme" id="202" weight="0.205">
+        <attvalues>
+          <attvalue for="0" value="0.205" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bolteae" target="Clostridium_hathewayi" id="203" weight="0.3075">
+        <attvalues>
+          <attvalue for="0" value="0.3075" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bolteae" target="Dorea_longicatena" id="204" weight="0.181">
+        <attvalues>
+          <attvalue for="0" value="-0.181" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bolteae" target="Escherichia_coli" id="205" weight="0.16505">
+        <attvalues>
+          <attvalue for="0" value="0.16505" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_bolteae" target="Haemophilus_parainfluenzae" id="206" weight="0.25525">
+        <attvalues>
+          <attvalue for="0" value="0.25525" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_citroniae" target="Clostridium_hathewayi" id="207" weight="0.24425">
+        <attvalues>
+          <attvalue for="0" value="0.24425" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_citroniae" target="Clostridium_symbiosum" id="208" weight="0.23865">
+        <attvalues>
+          <attvalue for="0" value="0.23865" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_citroniae" target="Coprococcus_comes" id="209" weight="0.1899499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1899499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_citroniae" target="Dorea_longicatena" id="210" weight="0.16025">
+        <attvalues>
+          <attvalue for="0" value="-0.16025" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_citroniae" target="Eggerthella_unclassified" id="211" weight="0.19205">
+        <attvalues>
+          <attvalue for="0" value="0.19205" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_citroniae" target="Flavonifractor_plautii" id="212" weight="0.17735">
+        <attvalues>
+          <attvalue for="0" value="0.17735" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_hathewayi" target="Clostridium_symbiosum" id="213" weight="0.2012">
+        <attvalues>
+          <attvalue for="0" value="0.2012" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_leptum" target="Parabacteroides_distasonis" id="214" weight="0.1709">
+        <attvalues>
+          <attvalue for="0" value="0.1709" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_leptum" target="Ruminococcus_gnavus" id="215" weight="0.1923">
+        <attvalues>
+          <attvalue for="0" value="0.1923" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_symbiosum" target="Ruminococcus_bromii" id="216" weight="0.1565">
+        <attvalues>
+          <attvalue for="0" value="0.1565" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Clostridium_symbiosum" target="Veillonella_atypica" id="217" weight="0.18655">
+        <attvalues>
+          <attvalue for="0" value="-0.18655" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Dialister_invisus" id="218" weight="0.262">
+        <attvalues>
+          <attvalue for="0" value="0.262" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Dorea_unclassified" id="219" weight="0.1871">
+        <attvalues>
+          <attvalue for="0" value="0.1871" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Flavonifractor_plautii" id="220" weight="0.1794">
+        <attvalues>
+          <attvalue for="0" value="0.1794" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Parabacteroides_unclassified" id="221" weight="0.1902">
+        <attvalues>
+          <attvalue for="0" value="0.1902" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Roseburia_inulinivorans" id="222" weight="0.2133">
+        <attvalues>
+          <attvalue for="0" value="-0.2133" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Ruminococcus_bromii" id="223" weight="0.1614">
+        <attvalues>
+          <attvalue for="0" value="-0.1614" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Ruminococcus_lactaris" id="224" weight="0.209">
+        <attvalues>
+          <attvalue for="0" value="-0.209" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Collinsella_aerofaciens" target="Ruminococcus_torques" id="225" weight="0.1506">
+        <attvalues>
+          <attvalue for="0" value="0.1506" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Coprobacillus_unclassified" target="Dialister_invisus" id="226" weight="0.15435">
+        <attvalues>
+          <attvalue for="0" value="-0.15435" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Coprobacillus_unclassified" target="Dorea_unclassified" id="227" weight="0.16355">
+        <attvalues>
+          <attvalue for="0" value="-0.16355" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Coprobacillus_unclassified" target="Escherichia_coli" id="228" weight="0.1768">
+        <attvalues>
+          <attvalue for="0" value="0.1768" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Coprobacillus_unclassified" target="Eubacterium_eligens" id="229" weight="0.15695">
+        <attvalues>
+          <attvalue for="0" value="0.15695" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Coprobacillus_unclassified" target="Parabacteroides_unclassified" id="230" weight="0.29065">
+        <attvalues>
+          <attvalue for="0" value="-0.29065" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Coprobacillus_unclassified" target="Ruminococcus_gnavus" id="231" weight="0.15465">
+        <attvalues>
+          <attvalue for="0" value="-0.15465" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Coprococcus_catus" target="Ruminococcus_gnavus" id="232" weight="0.26615">
+        <attvalues>
+          <attvalue for="0" value="0.26615" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Coprococcus_comes" target="Eubacterium_siraeum" id="233" weight="0.1879">
+        <attvalues>
+          <attvalue for="0" value="0.1879" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Coprococcus_comes" target="Lachnospiraceae_bacterium_3_1_46FAA" id="234" weight="0.1712">
+        <attvalues>
+          <attvalue for="0" value="-0.1712" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Coprococcus_comes" target="Ruminococcus_lactaris" id="235" weight="0.2306">
+        <attvalues>
+          <attvalue for="0" value="-0.2306" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Dialister_invisus" target="Ruminococcus_gnavus" id="236" weight="0.25455">
+        <attvalues>
+          <attvalue for="0" value="-0.25455" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Dorea_formicigenerans" target="Flavonifractor_plautii" id="237" weight="0.2138499999999999">
+        <attvalues>
+          <attvalue for="0" value="0.2138499999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Dorea_formicigenerans" target="Ruminococcus_torques" id="238" weight="0.15575">
+        <attvalues>
+          <attvalue for="0" value="0.15575" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Dorea_longicatena" target="Streptococcus_parasanguinis" id="239" weight="0.1716">
+        <attvalues>
+          <attvalue for="0" value="0.1716" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Escherichia_coli" target="Ruminococcus_gnavus" id="240" weight="0.16095">
+        <attvalues>
+          <attvalue for="0" value="0.16095" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Escherichia_unclassified" target="Oscillibacter_unclassified" id="241" weight="0.15245">
+        <attvalues>
+          <attvalue for="0" value="-0.15245" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Escherichia_unclassified" target="Parabacteroides_unclassified" id="242" weight="0.1588">
+        <attvalues>
+          <attvalue for="0" value="-0.1588" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_eligens" target="Parabacteroides_merdae" id="243" weight="0.1594499999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.1594499999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_hallii" target="Eubacterium_rectale" id="244" weight="0.1883">
+        <attvalues>
+          <attvalue for="0" value="0.1883" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_hallii" target="Parabacteroides_distasonis" id="245" weight="0.1762">
+        <attvalues>
+          <attvalue for="0" value="-0.1762" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_siraeum" target="Lachnospiraceae_bacterium_2_1_58FAA" id="246" weight="0.1566">
+        <attvalues>
+          <attvalue for="0" value="-0.1566" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_siraeum" target="Lachnospiraceae_bacterium_7_1_58FAA" id="247" weight="0.15045">
+        <attvalues>
+          <attvalue for="0" value="-0.15045" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_siraeum" target="Parabacteroides_merdae" id="248" weight="0.24275">
+        <attvalues>
+          <attvalue for="0" value="0.24275" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_ventriosum" target="Ruminococcus_bromii" id="249" weight="0.1591999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1591999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Eubacterium_ventriosum" target="Ruminococcus_gnavus" id="250" weight="0.1572">
+        <attvalues>
+          <attvalue for="0" value="-0.1572" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Faecalibacterium_prausnitzii" target="Parasutterella_excrementihominis" id="251" weight="0.1593">
+        <attvalues>
+          <attvalue for="0" value="-0.1593" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Flavonifractor_plautii" target="Oscillibacter_unclassified" id="252" weight="0.1618">
+        <attvalues>
+          <attvalue for="0" value="-0.1618" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Flavonifractor_plautii" target="Parabacteroides_unclassified" id="253" weight="0.15985">
+        <attvalues>
+          <attvalue for="0" value="-0.15985" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Flavonifractor_plautii" target="Roseburia_inulinivorans" id="254" weight="0.18075">
+        <attvalues>
+          <attvalue for="0" value="0.18075" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Haemophilus_parainfluenzae" target="Lachnospiraceae_bacterium_7_1_58FAA" id="255" weight="0.1516">
+        <attvalues>
+          <attvalue for="0" value="0.1516" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Haemophilus_parainfluenzae" target="Parabacteroides_merdae" id="256" weight="0.18145">
+        <attvalues>
+          <attvalue for="0" value="-0.18145" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Haemophilus_parainfluenzae" target="Roseburia_intestinalis" id="257" weight="0.1785999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1785999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Holdemania_filiformis" target="Veillonella_atypica" id="258" weight="0.24455">
+        <attvalues>
+          <attvalue for="0" value="0.24455" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Holdemania_filiformis" target="Veillonella_parvula" id="259" weight="0.21185">
+        <attvalues>
+          <attvalue for="0" value="0.21185" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_1_1_57FAA" target="Veillonella_dispar" id="260" weight="0.1718">
+        <attvalues>
+          <attvalue for="0" value="0.1718" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_1_1_57FAA" target="Veillonella_parvula" id="261" weight="0.17165">
+        <attvalues>
+          <attvalue for="0" value="0.17165" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_1_1_57FAA" target="Veillonella_unclassified" id="262" weight="0.16875">
+        <attvalues>
+          <attvalue for="0" value="0.16875" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_2_1_58FAA" target="Ruminococcus_lactaris" id="263" weight="0.29655">
+        <attvalues>
+          <attvalue for="0" value="0.29655" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_2_1_58FAA" target="Veillonella_dispar" id="264" weight="0.2029999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.2029999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_2_1_58FAA" target="Veillonella_parvula" id="265" weight="0.1736">
+        <attvalues>
+          <attvalue for="0" value="0.1736" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_2_1_58FAA" target="Veillonella_unclassified" id="266" weight="0.2077999999999999">
+        <attvalues>
+          <attvalue for="0" value="0.2077999999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_3_1_46FAA" target="Roseburia_intestinalis" id="267" weight="0.1813">
+        <attvalues>
+          <attvalue for="0" value="0.1813" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_5_1_63FAA" target="Parabacteroides_merdae" id="268" weight="0.1993">
+        <attvalues>
+          <attvalue for="0" value="-0.1993" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_7_1_58FAA" target="Parasutterella_excrementihominis" id="269" weight="0.18895">
+        <attvalues>
+          <attvalue for="0" value="0.18895" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_7_1_58FAA" target="Subdoligranulum_unclassified" id="270" weight="0.2117">
+        <attvalues>
+          <attvalue for="0" value="-0.2117" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Lachnospiraceae_bacterium_8_1_57FAA" target="Streptococcus_salivarius" id="271" weight="0.1713">
+        <attvalues>
+          <attvalue for="0" value="-0.1713" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Oscillibacter_unclassified" target="Veillonella_dispar" id="272" weight="0.15815">
+        <attvalues>
+          <attvalue for="0" value="-0.15815" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_distasonis" target="Parasutterella_excrementihominis" id="273" weight="0.1718">
+        <attvalues>
+          <attvalue for="0" value="0.1718" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_distasonis" target="Streptococcus_salivarius" id="274" weight="0.1558">
+        <attvalues>
+          <attvalue for="0" value="-0.1558" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_distasonis" target="Veillonella_dispar" id="275" weight="0.2222">
+        <attvalues>
+          <attvalue for="0" value="-0.2222" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_distasonis" target="Veillonella_parvula" id="276" weight="0.2244">
+        <attvalues>
+          <attvalue for="0" value="-0.2244" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_distasonis" target="Veillonella_unclassified" id="277" weight="0.2297">
+        <attvalues>
+          <attvalue for="0" value="-0.2297" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_merdae" target="Parasutterella_excrementihominis" id="278" weight="0.19235">
+        <attvalues>
+          <attvalue for="0" value="-0.19235" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_merdae" target="Roseburia_unclassified" id="279" weight="0.1709">
+        <attvalues>
+          <attvalue for="0" value="0.1709" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_merdae" target="Streptococcus_parasanguinis" id="280" weight="0.1687">
+        <attvalues>
+          <attvalue for="0" value="-0.1687" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_merdae" target="Streptococcus_salivarius" id="281" weight="0.1596">
+        <attvalues>
+          <attvalue for="0" value="-0.1596" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_merdae" target="Veillonella_dispar" id="282" weight="0.21685">
+        <attvalues>
+          <attvalue for="0" value="-0.21685" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_merdae" target="Veillonella_parvula" id="283" weight="0.2274">
+        <attvalues>
+          <attvalue for="0" value="-0.2274" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_merdae" target="Veillonella_unclassified" id="284" weight="0.18485">
+        <attvalues>
+          <attvalue for="0" value="-0.18485" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_unclassified" target="Roseburia_intestinalis" id="285" weight="0.2062">
+        <attvalues>
+          <attvalue for="0" value="-0.2062" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_unclassified" target="Ruminococcus_obeum" id="286" weight="0.2068999999999999">
+        <attvalues>
+          <attvalue for="0" value="-0.2068999999999999" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Parabacteroides_unclassified" target="Veillonella_unclassified" id="287" weight="0.1604">
+        <attvalues>
+          <attvalue for="0" value="-0.1604" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Roseburia_hominis" target="Roseburia_inulinivorans" id="288" weight="0.2148">
+        <attvalues>
+          <attvalue for="0" value="0.2148" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Roseburia_unclassified" target="Ruminococcus_obeum" id="289" weight="0.1516">
+        <attvalues>
+          <attvalue for="0" value="-0.1516" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Ruminococcus_gnavus" target="Veillonella_atypica" id="290" weight="0.1965">
+        <attvalues>
+          <attvalue for="0" value="-0.1965" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Ruminococcus_lactaris" target="Subdoligranulum_unclassified" id="291" weight="0.16285">
+        <attvalues>
+          <attvalue for="0" value="-0.16285" />
+          <attvalue for="1" value="competition" />
+        </attvalues>
+      </edge>
+      <edge source="Ruminococcus_lactaris" target="Veillonella_atypica" id="292" weight="0.1821">
+        <attvalues>
+          <attvalue for="0" value="0.1821" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Streptococcus_parasanguinis" target="Veillonella_unclassified" id="293" weight="0.1992499999999999">
+        <attvalues>
+          <attvalue for="0" value="0.1992499999999999" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Streptococcus_salivarius" target="Veillonella_dispar" id="294" weight="0.2777">
+        <attvalues>
+          <attvalue for="0" value="0.2777" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Streptococcus_salivarius" target="Veillonella_parvula" id="295" weight="0.2902">
+        <attvalues>
+          <attvalue for="0" value="0.2902" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Streptococcus_salivarius" target="Veillonella_unclassified" id="296" weight="0.31745">
+        <attvalues>
+          <attvalue for="0" value="0.31745" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Veillonella_atypica" target="Veillonella_parvula" id="297" weight="0.1922">
+        <attvalues>
+          <attvalue for="0" value="0.1922" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Veillonella_atypica" target="Veillonella_unclassified" id="298" weight="0.17955">
+        <attvalues>
+          <attvalue for="0" value="0.17955" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+      <edge source="Veillonella_dispar" target="Veillonella_unclassified" id="299" weight="0.519">
+        <attvalues>
+          <attvalue for="0" value="0.519" />
+          <attvalue for="1" value="mutualism" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
