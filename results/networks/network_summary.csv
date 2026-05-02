@@ -1,0 +1,4 @@
+Condition,Nodes,Edges,Mutualism,Competition,Modularity,Communities,Density
+CD,81,280,163,117,0.312,5,0.08642
+UC,88,300,147,153,0.352,6,0.07837
+Healthy,99,593,317,276,0.225,4,0.122243
