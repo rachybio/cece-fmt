@@ -1,0 +1,3 @@
+Weight_scheme,Spearman_r_calib_val,Spearman_r_test,p_value_test,Note
+Manual (NB10),0.2113,0.4184,0.0,Fixed weights chosen a priori (historical_engraftment_rate excluded from both)
+CECE-Calibrated,0.3309,0.5346,0.0,"Weights learned via Nelder-Mead on calib split, excluding historical_engraftment_rate to avoid circularity"

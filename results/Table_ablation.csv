@@ -1,0 +1,8 @@
+removed_group,n_features,AUC,F1,delta_AUC
+none (full model),23,0.7773,0.7205,0.0
+ecological,21,0.7792,0.7188,-0.0019
+causal,20,0.7755,0.7161,0.0018
+metabolic,19,0.7766,0.72,0.0007
+scfa,15,0.778,0.7171,-0.0007
+disease,18,0.7749,0.7159,0.0024
+donor,22,0.7563,0.6999,0.0209

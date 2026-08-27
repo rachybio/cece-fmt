@@ -1,0 +1,7 @@
+feature_group,n_features,isolated_AUC,above_random
+ecological,2,0.7441,0.2441
+causal,3,0.7396,0.2396
+donor,1,0.7256,0.2256
+metabolic,4,0.7037,0.2037
+scfa,8,0.7016,0.2016
+disease,5,0.5451,0.0451

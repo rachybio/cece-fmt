@@ -1,0 +1,33 @@
+Section,Metric,Value
+Dataset,Podlesny FMT cases (total),203
+Dataset,Train engraftment records,8697
+Dataset,Test engraftment records,2254
+Dataset,Engraftment rate — train,52.31%
+Dataset,Engraftment rate — test,52.44%
+Dataset,Species evaluated (total),272
+Networks,CD nodes,86
+Networks,CD edges,636
+Networks,CD mutualism ratio,0.555
+Networks,UC nodes,86
+Networks,UC edges,834
+Networks,Healthy nodes,87
+Networks,Healthy edges,1040
+Networks,Edges shared CD∩UC∩Healthy,193
+Causal,NOTEARS keystone species,29
+Causal,Species with ACE estimated,131
+Causal,Significant ACE (p<0.05 uncorr),33
+Causal,Significant ACE (Bonferroni),0
+ML model,Number of features,23
+ML model,Random Forest AUC-ROC (test),0.7773
+ML model,Random Forest Avg Precision (test),0.7916
+ML model,Random Forest Precision (test),0.7235
+ML model,Random Forest Recall (test),0.7174
+ML model,Random Forest F1 (test),0.7205
+ML model,CECE score vs engraftment (Spearman r),0.625
+GA optimizer,Test donors analyzed,20
+GA optimizer,GA generations,60
+GA optimizer,Population size,100
+GA optimizer,Consortium size range,5–20
+GA optimizer,Median consortium size,5
+GA optimizer,Median GA fitness,0.8853
+GA optimizer,Universal engrafters (≥50%),4

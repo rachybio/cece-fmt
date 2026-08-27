@@ -1,0 +1,2 @@
+AUC_ROC,Precision,Recall,F1,Model,N_features,N_test_records,N_test_species,N_train_records,N_train_species
+0.7773,0.7235,0.7174,0.7205,Random Forest,23,2254,215,8697,264

@@ -1,5 +1,8 @@
-# Raw data — kept locally, never committed
+# Raw data (locally only)
 data/raw/*
+
+# External sources (AGORA) (locally only)
+data/external/
 
 # Python
 __pycache__/

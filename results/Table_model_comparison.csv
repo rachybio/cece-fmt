@@ -1,0 +1,4 @@
+Model,AUC_ROC,Precision,Recall,F1,Reference
+Random Forest,0.7773,0.7235,0.7174,0.7205,Breiman 2001 Machine Learning
+XGBoost,0.7728,0.7207,0.703,0.7118,Chen & Guestrin 2016 KDD
+Logistic Regression,0.7227,0.6662,0.7462,0.7039,Baseline

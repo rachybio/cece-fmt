@@ -1,0 +1,6 @@
+score_component,manual_weight,calibrated_weight
+keystone_conflict_mean,0.15,0.119658
+niche_overlap_mean,0.1,0.516788
+resource_accessibility,0.15,0.145886
+crossfeeding_synergy,0.1,0.102449
+causal_ace,0.2,0.115218

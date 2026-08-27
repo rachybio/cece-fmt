@@ -1,0 +1,11 @@
+feature,disease_group,n,r,p_value
+causal_ace,rCDI,1567,0.1005,0.0001
+causal_ace,MetS,5606,0.0629,0.0
+causal_ace,MDR,1326,0.0373,0.1749
+causal_ace,ICI,969,0.0993,0.002
+causal_ace,IBD,1483,0.0488,0.0603
+historical_engraftment_rate,rCDI,1567,0.2513,0.0
+historical_engraftment_rate,MetS,5606,0.5003,0.0
+historical_engraftment_rate,MDR,1326,0.284,0.0
+historical_engraftment_rate,ICI,969,0.3549,0.0
+historical_engraftment_rate,IBD,1483,0.2938,0.0

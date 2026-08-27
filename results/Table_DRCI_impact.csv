@@ -1,0 +1,3 @@
+Model,AUROC,AUROC_CI_lo,AUROC_CI_hi,AUPRC,N_features
+"Random Forest (baseline, no DRCI)",0.7773,0.7587,0.7967,0.7916,23
+Random Forest + DRCI,0.7715,0.753,0.7914,0.7853,24
