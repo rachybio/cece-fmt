@@ -16,11 +16,7 @@
 
 <p align="center">
   <sub>
-    Undergraduate Dissertation · B.Sc. (Hons with Research) Microbiology · 2026
-  </sub>
-  <br>
-  <sub>
-    Built on a personal laptop · Local Python + Google Colab
+    Undergraduate Dissertation Project · B.Sc. (Hons with Research) Microbiology · 2026
   </sub>
 </p>
 
@@ -52,173 +48,107 @@ The CeCe workflow integrates multiple biological layers:
   >
 </p>
 
-The framework combines ecological, temporal, causal and metabolic information with machine learning to investigate donor-derived microbial establishment within recipient context.
 
 
 
 
 
+<details>
+<summary><b>Abstract</b></summary>
+<br>
+
+As microbiome-based therapeutics move toward clinical maturity, predicting which donor gut microbial species successfully engraft after fecal microbiota transplantation remains a central challenge limiting the design of synthetic microbial consortia. This framework integrates SparCC-derived co-occurrence network analysis and causal structure learning, built from an inflammatory bowel disease metagenomic cohort, with constraint-based metabolic modeling and a Random Forest classifier into a single composite engraftment score, evaluated across 10,951 donor-species-case records spanning five clinical indications. A genetic algorithm uses this score to design minimal candidate consortia, optimized for predicted engraftment potential, ecological compatibility, and metabolic synergy per donor. The classifier achieved an AUC of 0.777 (95% CI 0.759 to 0.797), and the composite score correlated with observed engraftment on held-out data (Spearman correlation of 0.583, p<0.0001), though performance varied substantially across indications (AUC 0.68–0.85). Donor abundance was the strongest single predictor, while causal-effect estimates, derived from the inflammatory bowel disease cohort, did not survive correction for multiple comparisons and showed limited consistency when applied beyond it. Together, these results show that relational and metabolic information, unavailable to composition-only classifiers, can measurably shape consortium design, while underscoring that species-level co-occurrence should not yet be read as confirmed donor-strain engraftment.
+
+</details>
 
 
-
-
-
-
-
-
-
-
-
----
-
-## What makes this more than "stitched-together tools"
-
-Each of the four layers above is a well-established method on its own. What's actually being tested here is whether *chaining* them — DAG → causal effect → ML feature → GA fitness — produces something a single layer can't:
-
-- **The layers are genuinely chained, not parallel.** The causal DAG's output *is* an input to the ACE estimation, which *is* a feature the Random Forest sees, which *is* what the genetic algorithm optimises against. Break any one link and the downstream ones change.
-- **A disease-specific causal DAG was built to *test*, not assume, transferability.** Rather than reusing Crohn's-derived causal effects for ulcerative colitis, a UC-native DAG was fit on its own longitudinal data. The result was honestly inconclusive (CD–UC ACE correlation r = 0.085, 95% CI crossing zero) — reported as a limitation, not smoothed over.
-- **Ecological networks are disease-native, not borrowed.** Co-occurrence networks were rebuilt separately for each of the five FMT indications in the Podlesny cohort, rather than applying HMP2's IBD-only networks across unrelated diseases.
-- **The composite CECE score is calibrated, not hand-weighted.** Its five feature-group weights are fit by Nelder-Mead optimisation against real observed engraftment correlation, not chosen by intuition.
-- **The GA's fitness function was extended and *statistically validated*.** Adding a pairwise ecological-compatibility term produced a measurable, significant shift toward mutualistic consortia (Wilcoxon signed-rank on the compatibility score, *p* = 0.0045, n = 20 donors, paired/seeded comparison) — not just added on faith that it would help.
-- **A causal invariance test** checks whether species' causal effects hold up across all five disease groups, not just whether the final classifier is accurate.
-
----
-
-## Results at a glance
-
-Held-out test set, Random Forest (selected over XGBoost and Logistic Regression via paired bootstrap comparison):
+## 3. Results at a Glance
 
 | Metric | Value |
 |---|---|
-| Pooled AUC-ROC | **0.777** |
-| CD (n = 83) | 0.778 |
-| UC (n = 227) | 0.675 |
-| rCDI | 0.735 |
-| MetS | 0.813 |
-| MDR | 0.672 |
-| ICI | 0.842 |
-| IBD (pooled CD+UC) | 0.694 |
-| CECE score vs. observed engraftment (Spearman) | *r* = 0.619 |
+| Classifier performance | AUC-ROC 0.7773 (95% CI 0.759–0.797) 
+| Composite score validity | Spearman ρ=0.619, p<0.0001 (n=138 species) 
+| Cross-indication AUC range | 0.67 (MDR) – 0.84 (ICI)
+| Dominant predictor | Donor abundance (Δ=+0.021 AUC on removal)
+| Causal-effect significance | 0/131 species survive Bonferroni correction
+| Causal-feature cross-indication invariance | Weak but sign-consistent (mean r=+0.070) across all 5 indications
+| Ecological-compatibility GA test | Improves compatibility score (p=0.0045); pair-count improvement not significant (p=0.244)
 
-> The CD/UC gap above is real, investigated, and not yet fully closed — see [Limitations](#limitations-read-before-you-cite-a-number).
 
----
+## 4. Methodology
 
-## Pipeline architecture
+Five integrated layers - **full parameters, thresholds, data sources, the complete notebooks breakdown and every result in detail present in [`PIPELINE.md`](PIPELINE.md)**
 
 
 
-## Notebook guide
+## 5. Getting Started
 
-| # | Notebook | Environment | Purpose | Key outputs |
-|---|---|---|---|---|
-| 01 | `data_and_EDA` | 💻 Laptop | Load HMP2 + Podlesny + Smillie data; CLR transform, PCA, diversity, FDR-corrected differential abundance | `Fig1_EDA.png`, `*_network_CLR.csv` |
-| 02 | `engraftment_labels` | 💻 Laptop | Derive donor-strain engraftment labels; case-level stratified train/test split (locked before labelling) | `engraftment_labels.csv`, `podlesny_wide.pkl` |
-| 03a | `fastspar_prep` | 💻 Laptop | Validate/repair integer count matrices — CD / UC / Healthy | `*_network_counts_FIXED.tsv` |
-| 03b | `fastspar_prep` | 💻 Laptop | Same, native to all 5 Podlesny disease groups | `{group}_pod_network_counts.tsv` |
-| 04a | `fastspar_COLAB` | ☁️ Colab | Compile FastSpar; bootstrap correlations + *p*-values — CD / UC / Healthy | `cor_*.csv`, `pvals_*.csv` |
-| 04b | `fastspar_COLAB` | ☁️ Colab | Same, across the 5 Podlesny groups | per-group `cor`/`pval` CSVs |
-| 05 | `networks` | 💻 Laptop | Build co-occurrence networks + keystone species, HMP2 *and* native Podlesny groups | `*_network.gexf`, `keystones_*.csv` |
-| 06 | `NOTEARS_causal_DAG` | ☁️ Colab | Learn a causal DAG over keystone species from HMP2 longitudinal data (CD-native + UC-native) | `dag_CD.csv`, `dag_UC.csv` (bootstrapped) |
-| 07 | `causal_effects_CIs` | 💻 Laptop | Backdoor-adjusted average causal effect (ACE) per species; Bonferroni + FDR correction | `causal_effects.csv`, `causal_effects_UC.csv` |
-| 08 | `micom_COLAB` | ☁️ Colab | Constraint-based (FBA) metabolic modelling of donor communities, all 5 disease groups | `micom_growth/exchange/scfa_results.csv` |
-| 09 | `ML_SHAP_Ablation` | 💻 Laptop | Train Random Forest (vs. XGBoost / LogReg); real SHAP explainability; feature-group ablation | `cece_rf_model.pkl`, `Fig_SHAP.png` |
-| 10 | `cece_score_and_GA` | 💻 Laptop | Composite CECE score; genetic algorithm for de novo consortium design + ecological-compatibility extension | `cece_final_scores.csv`, `ga_optimal_consortia.csv` |
-| 11 | `CECE_additions` | 💻 Laptop | Calibrated CECE weighting, Donor-Recipient Compatibility Index (DRCI), SHAP-justified GA weights | `Table_GA_fitness_comparison.csv` |
-| 12 | `validation` | 💻 Laptop | Held-out evaluation, per-disease-group breakdown, causal invariance test | `Table1_model_performance.csv`, `Fig_ROC.png` |
-
----
-
-## Repository structure
-
-```
-cece-fmt/
-├── notebooks/              # 01–12, run roughly top to bottom (see table above)
-├── cece/                   # shared helpers imported by multiple notebooks
-│   └── preprocessing.py     # preprocess() — used by NB01 and NB03b
-├── data/
-│   ├── raw/                 # NOT committed — see Data sources below
-│   └── processed/           # NOT committed — regenerated by NB01–08
-├── results/
-│   ├── networks/            # co-occurrence networks, keystones (.gexf, .csv)
-│   └── ...                  # causal effects, MICOM outputs, model artifacts
-├── figures/
-│   └── final/                # publication-ready figures
-├── assets/
-│   └── cece_banner.svg
-├── environment.yml
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
----
-
-## Getting started
-
+**Computational environment:** this project mixes local Jupyter/conda work and Google Colab, authored in VS Code with the Jupyter extension. Any standard Jupyter interface works for the non-Colab notebooks; the `_COLAB` notebooks are built to install their own system dependencies inline, in a fresh Colab runtime.
+ 
 ```bash
-git clone https://github.com/<your-username>/cece-fmt.git
+git clone https://github.com/<rachybio>/cece-fmt.git
 cd cece-fmt
-
-# conda environment (matches the notebooks' kernel name, cece-main)
+ 
+# conda environment
 conda create -n cece-main python=3.10
 conda activate cece-main
 pip install -r requirements.txt
 ```
-
-Notebooks `04a`, `04b`, `06`, and `08` are written for **Google Colab** (they compile FastSpar from source / need Colab's compute for MICOM and NOTEARS) — upload them to Colab and mount Google Drive as directed in each notebook's first cell. Everything else runs locally.
-
-Run order follows the numbering: `01 → 02 → {03a, 03b} → {04a, 04b} → 05 → 06 → 07 → 08 → 09 → 10 → 11 → 12`. The [pipeline architecture](#pipeline-architecture) diagram above shows which stages can run in parallel.
-
----
-
-## Data sources
-
-No raw data is committed to this repository — only code. All three source datasets are publicly available:
-
-| Dataset | Used for | Source |
-|---|---|---|
-| HMP2 / IBDMDB | CD/UC/Healthy longitudinal profiles (causal DAG + ACE layer) | [ibdmdb.org](https://ibdmdb.org) — Lloyd-Price et al., 2019 |
-| Podlesny et al. FMT cohort | Donor/recipient profiles across 5 disease indications | Podlesny et al., 2022, *Cell Reports Medicine* |
-| Smillie et al. FMT cohort | Additional engraftment validation data | Smillie et al., 2018, *Cell Host & Microbe* |
-
-To reproduce the pipeline, download these from their original sources into `data/raw/` following the instructions at the top of `01_data_and_EDA.ipynb`.
-
----
-
-## Limitations (read before you cite a number)
-
-- **The CD vs. UC AUC gap (0.778 vs. 0.675) is real and not fully explained.** Feature coverage, dominant-feature signal, and disease-group identity were all tested as explanations and ruled out or only partially adopted — documented in NB12 rather than hidden.
-- **The causal layer (DAG + ACE) is HMP2-native only.** Podlesny's FMT samples are cross-sectional, not a genuine longitudinal series, so they aren't suitable for NOTEARS; causal effects for rCDI/MetS/MDR/ICI fall back to the nearest available HMP2 estimate rather than being disease-native.
-- **FastSpar network edges use an uncorrected bootstrap *p*-value threshold** (standard in this literature for exploratory network construction, but not FDR-corrected — unlike the ACE estimation in NB07, which is).
-- **Some UC-specific causal effect estimates rest on small per-species samples** (several below n=20); their bootstrap CIs are wide and are reported as such.
-- **Everything here ran on a personal laptop**, with Google Colab used only for the four genuinely compute-heavy stages (FastSpar bootstrapping, NOTEARS structure learning, MICOM's flux balance simulations).
-
----
-
-## Citation
-
-```bibtex
-@unpublished{cece2026,
-  title  = {CECE: A Multi-Layer Computational Framework for Predictive
-            Synthetic Faecal Microbiota Transplantation Design Integrating
-            Causal Inference, Ecological Network Analysis, Constraint-Based
-            Metabolic Modelling and Machine Learning},
-  author = {Rachna},  % add your full name / affiliation
-  year   = {2026},
-  note   = {Undergraduate dissertation. Abstract submitted to BIOINFO/GIW,
-            ISCB-Asia 2026, Seoul}
-}
+ 
+Notebooks `04a`, `04b`, `06`, and `08` are written for **Google Colab** (they compile FastSpar from source / need Colab's compute for MICOM and NOTEARS) — upload them to Colab and mount Google Drive as directed in each notebook's first cell. Everything else runs locally with the environment above.
+ 
+Each of those Colab notebooks installs its own system-level dependencies automatically, in its own first cells — for reference:
+ 
+```bash
+# inside 04a / 04b — compiling FastSpar from source
+apt-get install -y libgsl-dev build-essential
+git clone https://github.com/scwatts/fastspar.git
+cd fastspar && ./autogen.sh && ./configure && make -j4
+ 
+# inside 08 — MICOM's GLPK solver
+apt-get install -y glpk-utils libglpk-dev
 ```
+ 
+**Run order:** `01` then `02` must run first — everything else depends on their outputs. After that, three branches are independent of each other and can run in any order (or in parallel):
+ 
+- **Ecological:** `03a/03b → 04a/04b → 05`
+- **Causal:** `06 → 07`
+- **Metabolic:** `08`
+  
+  All three feed into `09`, followed by `09 → 10 → 11 → 12` in sequence.
+
+
+## 6. Limitations
+
+- The CD vs. UC AUC gap (0.778 vs. 0.675) is real and not fully explained. Feature coverage, dominant-feature signal and disease-group identity were all tested as explanations and ruled out or only partially adopted (documented in NB12).
+- The causal layer (DAG + ACE) is HMP2-native only. Podlesny's FMT samples are cross-sectional, not a genuine longitudinal series, so they aren't suitable for NOTEARS, causal effects for rCDI/MetS/MDR/ICI fall back to the nearest available HMP2 estimate rather than being disease-native.
+- Causal-effect estimates showed only weak sign-consistency across the 5 disease indications (mean r=+0.070). That's a further, independent reason to treat any single indication's causal estimates cautiously, even setting the HMP2-only scope issue aside, the effects that are estimated don't transfer especially cleanly across disease contexts.
+- FastSpar network edges use an uncorrected bootstrap *p*-value threshold (standard in this literature for exploratory network construction, but not FDR-corrected, unlike the ACE estimation in NB07, which is).
+- Some UC-specific causal effect estimates rest on small per-species samples (several below n=20); their bootstrap CIs are wide and are reported as such.
+- Everything here ran on a personal laptop, with Google Colab used only for the four genuinely compute-heavy stages (FastSpar bootstrapping, NOTEARS structure learning, MICOM's flux balance simulations).
+
+## 7. Disclaimer
+
+None of the individual methods here are novel: SparCC, NOTEARS, MICOM, Random Forests and genetic algorithms are all established tools, each already used elsewhere in microbiome research. What CeCe tests is whether integrating them into a single scoring-and-design framework adds real value over any one method alone.
+ 
+The closest published work I could find is Ianiro et al. (*Nature Medicine*, 2022), whose cross-dataset ML model predicted post-FMT species engraftment across eight disease types at ~0.77 AUROC, essentially the same accuracy this project's Random Forest achieves (0.777). A more recent system, MOZAIC (*Cell Reports*, 2026), uses a neural network to predict whole-donor-to-recipient compatibility. CeCe does not out-predict either of these on accuracy and doesn't claim to. What neither does is move past prediction into design: both estimate whether a species or a donor will work, not which specific subset of species should be assembled into a defined consortium. Separately, a 2022 *Lancet Microbe* Personal View explicitly called for causal-discovery methods like the DAG-based approach used here to be tested on real microbiome data rather than only simulated data, as far as this project's own literature search found, that call remains largely unanswered for FMT engraftment specifically.
+ 
+CeCe chains causal-effect estimation, ecological network compatibility and metabolic modelling into an explicit optimization step (the genetic algorithm) and tests whether that chaining changes anything. The one concrete result on that question is the ecological-compatibility GA extension (p=0.0045): adding that term measurably shifted the algorithm's selected consortia toward more compatible species pairings, without needing hand-tuned weights. That's a small, specific, honestly-reported piece of evidence that the integration does something beyond what prediction alone would give (not proof the whole framework works and not a claim that any of its individual parts are new).
+ 
+It is a computational dissertation project: an exploratory, hypothesis-generating pipeline, not a validated clinical or diagnostic tool. 
+
+## Author
+
+**Rachna**
+, B.Sc. (Hons. with Research) Microbiology, Amity Institute of Microbial Technology, Amity University, Noida, Uttar Pradesh, India
+[rachnasehrawatt@gmail.com]
+
+Supervised by: 
+Dr. Bhawna Rathi (Assistant Professor-II, Amity Institute of Biotechnology, Amity University, Noida, Uttar Pradesh, India),
+Dr. Arti Goel (Assistant Professor-III, Amity Institute of Microbial Technology, Amity University, Noida, Uttar Pradesh, India),
+Dr. Devendra Kumar Choudhary (Professor, Amity Institute of Organic Agriculture, Amity University, Noida, Uttar Pradesh, India)
+
 
 ---
 
----
-
-## License
-
-Not yet chosen. If you intend this repository to be reused (e.g. alongside a grad-school application or a paper), a permissive license such as MIT is the common choice for academic code — see [choosealicense.com](https://choosealicense.com) — but that's your call to make, not a default to assume.
-
----
-
-<p align="center"><em>Rachna · BSc Microbiology (Hons) · built on a laptop, not a cluster</em></p>
+<p align="center"><em>Built on a laptop, not a cluster</em></p>
