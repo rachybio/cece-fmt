@@ -21,8 +21,7 @@ shap==0.49.1
 joblib>=1.3.0
 
 # ------------------------------------------------------------
-# Notebook 06 — NOTEARS causal DAG (Google Colab)
-# not on PyPI, installed from source
+# Notebook 06 — NOTEARS causal DAG (Google Colab) not on PyPI, installed from source
 # ------------------------------------------------------------
 notears @ git+https://github.com/xunzheng/notears.git
 
