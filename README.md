@@ -51,28 +51,17 @@ The CeCe workflow integrates multiple biological layers:
 
 
 
-
-
-<details>
-<summary><b>Abstract</b></summary>
-<br>
-
-As microbiome-based therapeutics move toward clinical maturity, predicting which donor gut microbial species successfully engraft after fecal microbiota transplantation remains a central challenge limiting the design of synthetic microbial consortia. This framework integrates SparCC-derived co-occurrence network analysis and causal structure learning, built from an inflammatory bowel disease metagenomic cohort, with constraint-based metabolic modeling and a Random Forest classifier into a single composite engraftment score, evaluated across 10,951 donor-species-case records spanning five clinical indications. A genetic algorithm uses this score to design minimal candidate consortia, optimized for predicted engraftment potential, ecological compatibility, and metabolic synergy per donor. The classifier achieved an AUC of 0.777 (95% CI 0.759 to 0.797), and the composite score correlated with observed engraftment on held-out data (Spearman correlation of 0.583, p<0.0001), though performance varied substantially across indications (AUC 0.68–0.85). Donor abundance was the strongest single predictor, while causal-effect estimates, derived from the inflammatory bowel disease cohort, did not survive correction for multiple comparisons and showed limited consistency when applied beyond it. Together, these results show that relational and metabolic information, unavailable to composition-only classifiers, can measurably shape consortium design, while underscoring that species-level co-occurrence should not yet be read as confirmed donor-strain engraftment.
-
-</details>
-
-
 ## 3. Results at a Glance
 
 | Metric | Value |
 |---|---|
-| Classifier performance | AUC-ROC 0.7773 (95% CI 0.759–0.797) 
+| Classifier performance (Primary) | AUC-ROC 0.7773 (95% CI 0.759–0.797) 
 | Composite score validity | Spearman ρ=0.619, p<0.0001 (n=138 species) 
 | Cross-indication AUC range | 0.67 (MDR) – 0.84 (ICI)
-| Dominant predictor | Donor abundance (Δ=+0.021 AUC on removal)
+| Dominant predictor | Donor abundance (Δ=-0.021 AUC on removal)
 | Causal-effect significance | 0/131 species survive Bonferroni correction
 | Causal-feature cross-indication invariance | Weak but sign-consistent (mean r=+0.070) across all 5 indications
-| Ecological-compatibility GA test | Improves compatibility score (p=0.0045); pair-count improvement not significant (p=0.244)
+| Ecological-compatibility GA test | Improves compatibility score (p=0.0395); pair-count improvement not significant (p=0.0552)
 
 
 ## 4. Methodology
@@ -86,7 +75,7 @@ Five integrated layers - **full parameters, thresholds, data sources, the comple
 **Computational environment:** this project mixes local Jupyter/conda work and Google Colab, authored in VS Code with the Jupyter extension. Any standard Jupyter interface works for the non-Colab notebooks; the `_COLAB` notebooks are built to install their own system dependencies inline, in a fresh Colab runtime.
  
 ```bash
-git clone https://github.com/<rachybio>/cece-fmt.git
+git clone https://github.com/rachybio/cece-fmt.git
 cd cece-fmt
  
 # conda environment
@@ -139,8 +128,7 @@ It is a computational dissertation project: an exploratory, hypothesis-generatin
 
 ## Author
 
-**Rachna**
-, B.Sc. (Hons. with Research) Microbiology, Amity Institute of Microbial Technology, Amity University, Noida, Uttar Pradesh, India
+**Rachna**, B.Sc. (Hons. with Research) Microbiology, Amity Institute of Microbial Technology, Amity University, Noida, Uttar Pradesh, India
 [rachnasehrawatt@gmail.com]
 
 Supervised by: 
