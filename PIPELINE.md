@@ -69,7 +69,7 @@ Symmetrizes and cleans the correlation/p-value matrices, builds NetworkX graphs 
 193 edges are shared across all three conditions.
 
 ### NB06 (NOTEARS Causal DAG- Colab)
-Fits linear NOTEARS (temporal form, Xₜ → Xₜ₊₁) on the union of the top-15 keystones per condition (30 species total), separately for CD and UC. Threshold-sweeps edge weight (0.10–0.30) to find the smallest value giving an acyclic graph, breaks any remaining cycles by removing the lowest-weight edge in each cycle and checks edge stability via 20-resample bootstrap. A sensitivity check (subsampling CD to UC's sample size, 5 seeds) confirms CD's lower edge count is not purely a sample-size artifact.
+Fits linear NOTEARS (temporal form, Xₜ → Xₜ₊₁) on the union of the top-15 keystones per condition (30 species total), separately for CD and UC. Threshold-sweeps edge weight (0.10–0.30) to find the smallest value giving an acyclic graph, breaks any remaining cycles by removing the lowest-weight edge in each cycle and checks edge stability via 20-resample bootstrap. A sensitivity check (subsampling CD to UC's sample size, 5 seeds) shows the gap is at least partly a sample-size artifact: CD's edge count rises from 22 (at its full n=568) to a mean of 33.4 (range 29-39 across 5 seeds) once subsampled down to UC's n=347, close to UC's own edge count at full sample size. 
 
 **Result:** acyclic, bootstrap-annotated causal DAGs saved for CD and UC.
 
@@ -86,12 +86,12 @@ Estimates each species' average causal effect (ACE) of donor abundance on engraf
 CD-ACE vs. UC-ACE is only weakly correlated across the 37 species estimated in both (Spearman ρ = 0.085, p = 0.62);causal drivers of engraftment look largely condition-specific.
 
 ### NB08 (MICOM-Colab)
-Builds per-donor microbial communities from 818 AGORA v1.03 GEM files (genus/species-matched) and runs MICOM cooperative-tradeoff flux balance analysis (fraction = 0.5, Western-diet medium) per donor sample. 73 donors were selected (capped at 15/disease group, 13 for ICI); 67 simulated successfully (others skipped for resolvable species).
+Builds per-donor microbial communities from 818 AGORA v1.03 GEM files (genus/species-matched) and runs MICOM cooperative-tradeoff flux balance analysis (fraction = 0.5, Western-diet medium) per donor sample. 73 donors were selected (capped at 15/disease group, 13 for ICI); 67 simulated successfully.
 
 **Result:** 1,100 growth-rate records (118 species) and 56,703 exchange-flux records (308 metabolites: 10,692 secretion / 46,011 consumption fluxes). SCFA production scores (butyrate, propionate, acetate, lactate, succinate, formate) extracted via keyword-matched exchange reactions.
 
 ### NB09 (ML, SHAP & Ablation)
-Assembles a 23-feature table (causal ACE, ecological keystone-conflict / niche-overlap, MICOM resource-accessibility / crossfeeding / SCFA, disease-group, donor abundance) and trains Random Forest, XGBoost, and Logistic Regression.
+Assembles a 23-feature table (causal ACE, ecological keystone-conflict / niche-overlap, MICOM resource-accessibility / crossfeeding / SCFA, disease-group, donor abundance) and trains Random Forest, XGBoost and Logistic Regression.
 
 **Result- test set performance (2,254 records, 52.44% engrafted):**
 
