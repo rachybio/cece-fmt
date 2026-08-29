@@ -118,7 +118,7 @@ Builds a composite **CECE score** per species from six min-max-scaled components
 **Result:** 201 species scored, range 0.174–0.654. Top species: *Blautia wexlerae* (0.654), *Anaerostipes hadrus* (0.646), *Faecalibacterium prausnitzii* (0.612), *Ruminococcus bromii* (0.589). A genetic algorithm (population 100, 60 generations, 5-20 species per consortium) selects the donor-specific consortium maximizing RF-predicted engraftment probability, run across 20 donors. **Universal engrafters** (species chosen for ≥50% of donors): *F. prausnitzii* (70%), *A. hadrus* (55%), *Dorea longicatena* (50%), *B. wexlerae* (50%) — 4 species meet the bar. An eco-aware GA variant (adds a pairwise network-compatibility bonus) is compared to the baseline via paired Wilcoxon signed-rank tests.
 
 ### NB11 (CECE Additions)
-Calibrates CECE score weights against observed test-set engraftment rate (Spearman-optimized) as a comparison to the manual NB10 weights. Tests a **Donor-Recipient Compatibility Index (DRCI)** — an ACE-weighted donor-abundance × recipient-absence mismatch score, as a candidate 24th ML feature.
+Calibrates CECE score weights against observed test-set engraftment rate (Spearman-optimized) as a comparison to the manual NB10 weights. Tests a **Donor-Recipient Compatibility Index (DRCI)**, an ACE-weighted donor-abundance × recipient-absence mismatch score, as a candidate 24th ML feature.
 
 **Result:** DRCI ranks #1 of 24 features by SHAP importance when included, but adding it slightly hurts held-out performance:
 
@@ -132,7 +132,30 @@ DRCI is reported but **not adopted** in the final scoring/model. A SHAP-weighted
 ### NB12 (Validation)
 Final held-out evaluation of the NB09 Random Forest model, plus project-wide summary statistics and limitation checks.
 
-**Result:** test AUC-ROC 0.7773, AUPRC 0.7916, Precision 0.7235, Recall 0.7174, F1 0.7205 (2,254 records, 272 species). CECE score correlates with observed test-set engraftment rate; a calibration curve is plotted. Per-disease-group and CD-vs-UC (within IBD) AUC breakdowns with bootstrap 95% CIs confirm the pooled model isn't masking uneven subgroup performance.
+**Result:** test AUC-ROC 0.7773, AUPRC 0.7916, Precision 0.7235, Recall 0.7174, F1 0.7205 (2,254 records, 272 species).
+
+**CECE score validity**: Spearman r=0.625, Pearson r=0.619, both p<0.0001, comparing the CECE score to observed test-set engraftment rate across the 138 species with ≥3 test observations. A calibration curve is plotted alongside.
+
+**Per-disease-group AUC** (existing pooled model applied to each subgroup, no retraining; bootstrap 95% CI, 1,000 resamples): confirms pooling isn't masking uneven subgroup performance:
+
+| Disease group | n | AUC | 95% CI |
+|---|---|---|---|
+| MDR | 284 | 0.672 | [0.607, 0.731] |
+| IBD | 310 | 0.695 | [0.637, 0.756] |
+| rCDI | 306 | 0.736 | [0.681, 0.793] |
+| MetS | 1,175 | 0.813 | [0.791, 0.836] |
+| ICI | 179 | 0.840 | [0.776, 0.895] |
+
+Range: 0.672 (MDR) - 0.840 (ICI), against an overall pooled AUC of 0.7773.
+
+**CD vs UC within IBD** (subtype recovered from Podlesny's `Disease` metadata column; same pooled model, no retraining):
+
+| Subtype | n | AUC | 95% CI |
+|---|---|---|---|
+| UC | 227 | 0.675 | [0.604, 0.747] |
+| CD | 83 | 0.783 | [0.670, 0.879] |
+
+The CD/UC gap within IBD (0.783 vs 0.675) is real and not fully explained by the diagnostics tested (see README.md, Limitations).
 
 
 ---
